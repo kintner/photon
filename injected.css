@@ -1,0 +1,16 @@
+#photon-host {
+  bottom:0;
+  right:0;
+
+  background-color: #666699;
+  color:white;
+
+  position: fixed;
+  padding: 5px;
+  border-radius: 5px 0 0 0;
+  font-family: sans-serif;
+  font-size: 9pt;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  opacity:0.0;
+  z-index:1000000;
+}
