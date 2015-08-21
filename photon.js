@@ -5,8 +5,9 @@ chrome.webRequest.onCompleted.addListener(scanHeaders, {
 
 function scanHeaders(details) {
   for (var i = 0; i < details.responseHeaders.length; ++i) {
-    if (details.responseHeaders[i].name === 'X-Zendesk-Origin-Server') {
-      sendMessage(details.tabId, details.responseHeaders[i].value);
+    var header = details.responseHeaders[i]
+    if (header.name && header.name.toLowerCase() == 'x-zendesk-origin-server') {
+      sendMessage(details.tabId, header.value);
     }
   }
 }
