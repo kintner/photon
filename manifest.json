@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Photon",
   "description": "Shows which host is serving Zendesk",
-  "version": "0.2",
+  "version": "0.3",
   "homepage_url": "https://github.com/kintner/photon",
   "permissions": [
     "tabs", "webRequest", "<all_urls>"
